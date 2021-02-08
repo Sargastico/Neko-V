@@ -1,5 +1,3 @@
-# neko-V
-
 <div align="center">
   <img src="https://i.pinimg.com/originals/15/f1/63/15f16379e576615e08aa1270e34f4c90.png" width="15%">
   <h1>Neko-V</h1>

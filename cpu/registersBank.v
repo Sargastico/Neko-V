@@ -38,7 +38,7 @@ always @(posedge clk ) begin
     /*
 
     The "zero register" or 'x0', cannot be modified and always stores the constant zero.
-    Before assign any value coming from dataIn, the 'if statement' check if the register 'x0' was not selected.
+    Before assign any value coming from dataIn, the 'if statement' checks if the register 'x0' has not been selected.
 
     sauce: https://en.wikichip.org/wiki/risc-v/registers
 

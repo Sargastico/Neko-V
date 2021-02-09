@@ -45,13 +45,12 @@ always @(posedge clk ) begin
 
     else if ((write == 1) && (select != 0)) begin
 
-        registerBank[select] <= dataIn;
+        registers[select] <= dataIn;
 
     end
     
 end
 
 assign dataOut = registers[select];
-
 
 endmodule

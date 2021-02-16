@@ -14,7 +14,7 @@ module registerBank (
     output wire  [31:0]dataOut,  // 32-bit register
     input        [31:0]dataIn,   
     input        [16:0]select,   // Select 1 of 16 Registers
-    input        write           // 0 = Disable | 1 = Enable 
+    input        write           // 0 = Disable | 1 = Enable
 
 );
 
@@ -43,7 +43,7 @@ always @(posedge clk ) begin
         
     end
 
-    else if ((write == 1) && (select != 0)) begin
+    if ((write == 1) && (select != 0)) begin
 
         registers[select] <= dataIn;
 

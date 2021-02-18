@@ -4,9 +4,9 @@ module programCounter (
   input   wire          reset,
   input         [31:0]  dataIn,
   output  wire  [31:0]  dataOut,
-  input                 write,    // 1 => WRITE, 0 => READ
-  input                 writeAdd, // 1 => Add dataIn to PC, 0 => Set dataIn to PC
-  input                 count     // 1 => COUNT UP, 0 => STOPPED
+  input                 write,      // 1 => WRITE, 0 => READ
+  input                 writeAdd,   // 1 => Add dataIn to PC, 0 => Set dataIn to PC
+  input                 count       // 1 => COUNT UP, 0 => STOPPED
 
 );
 

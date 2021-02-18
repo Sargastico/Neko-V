@@ -1,6 +1,16 @@
 `timescale 1 ns/1 ns 
 `include "programCounter.v"
 
+/* 
+    Setting manual clock, because the 'always' thing is messing up with timing
+    and I'm f#ck1ng sick of trying to make this shi77y works lol.
+
+
+    srry oniii-chan >.<
+
+*/
+
+
 module programCounterTest;
 
     integer i;

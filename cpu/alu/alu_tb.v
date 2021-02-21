@@ -11,7 +11,6 @@ module ALUTest;
     reg   [31:0]  B;
     wire  [31:0]  Out;
 
-    // our device under test
     ALU alu(.operation(operation), .A(A), .B(B), .Out(Out));
 
     initial begin

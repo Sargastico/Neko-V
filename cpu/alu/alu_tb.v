@@ -36,7 +36,7 @@ module ALUTest;
 
             if (Out != (A + B)) begin
                 
-                $error("Expected o to be %d but got %d.", A + B, Out);
+                $error("Expected o to be [%d] but got [%d].", A + B, Out);
 
             end 
 
@@ -54,7 +54,7 @@ module ALUTest;
 
             if (Out != (A - B)) begin
                 
-                $error("Expected o to be %d but got %d.", A - B, Out);
+                $error("Expected o to be [%d] but got [%d].", A - B, Out);
 
             end   
 
@@ -72,7 +72,7 @@ module ALUTest;
 
             if (Out != (A | B)) begin
 
-                $error("Expected o to be %d but got %d.", A | B, Out);
+                $error("Expected o to be [%d] but got [%d].", A | B, Out);
                 
             end
 
@@ -90,7 +90,7 @@ module ALUTest;
 
             if (Out != (A ^ B)) begin
 
-                $error("Expected o to be %d but got %d.", A ^ B, Out);
+                $error("Expected o to be [%d] but got [%d].", A ^ B, Out);
 
             end
 
@@ -108,7 +108,7 @@ module ALUTest;
 
             if (Out != (A & B)) begin
                 
-                $error("Expected o to be %d but got %d.", A & B, Out);
+                $error("Expected o to be [%d] but got [%d].", A & B, Out);
 
             end
 
@@ -126,7 +126,7 @@ module ALUTest;
 
             if (Out != (A < B)) begin
             
-                $error("Expected o to be %d but got %d.", A < B, Out);
+                $error("Expected o to be [%d] but got [%d].", A < B, Out);
 
             end   
 
@@ -144,7 +144,7 @@ module ALUTest;
 
             if (Out != ($signed(A) < $signed(B))) begin
             
-                $error("Expected o to be %d but got %d.", $signed(A) < $signed(B), Out);
+                $error("Expected o to be [%d] but got [%d].", $signed(A) < $signed(B), Out);
 
             end
 
@@ -162,7 +162,7 @@ module ALUTest;
 
             if (Out != (A >> (B % 32))) begin
 
-                $error("Expected o to be %d but got %d.", A >> (B % 32), Out); 
+                $error("Expected o to be [%d] but got [%d].", A >> (B % 32), Out); 
 
             end   
 
@@ -181,7 +181,7 @@ module ALUTest;
 
             if (Out != (A << (B % 32))) begin
             
-                $error("Expected o to be %d but got %d.", A << (B % 32), Out);
+                $error("Expected o to be [%d] but got [%d].", A << (B % 32), Out);
 
             end
 
@@ -199,7 +199,7 @@ module ALUTest;
 
             if (Out != $unsigned($signed(A) >>> (B % 32))) begin
 
-                $error("Expected o to be %d but got %d.", $signed(A) >>> (B % 32), Out);
+                $error("Expected o to be [%d] but got [%d].", $signed(A) >>> (B % 32), Out);
 
             end
 
@@ -217,7 +217,7 @@ module ALUTest;
 
             if (Out != $unsigned($signed(A) <<< (B % 32))) begin
                 
-                $error("Expected o to be %d but got %d.", $signed(A) <<< (B % 32), Out);
+                $error("Expected o to be [%d] but got [%d].", $signed(A) <<< (B % 32), Out);
 
             end 
 
@@ -235,7 +235,7 @@ module ALUTest;
 
             if (Out != (A >= B)) begin
                 
-                $error("Expected o to be %d but got %d.", A >= B, Out);
+                $error("Expected o to be [%d] but got [%d].", A >= B, Out);
 
             end 
 
@@ -253,7 +253,7 @@ module ALUTest;
 
             if (Out != ($signed(A) >= $signed(B))) begin
                 
-                $error("Expected o to be %d but got %d.", $signed(A) >= $signed(B), Out);
+                $error("Expected o to be [%d] but got [%d].", $signed(A) >= $signed(B), Out);
 
             end 
 
@@ -271,7 +271,7 @@ module ALUTest;
 
             if (Out != (A == B)) begin
                 
-                $error("Expected o to be %d but got %d.", (A == B), Out);
+                $error("Expected o to be [%d] but got [%d].", (A == B), Out);
 
             end
 
@@ -289,7 +289,7 @@ module ALUTest;
 
             if (Out != (A != B)) begin
                 
-                $error("Expected o to be %d but got %d.", (A != B), Out);
+                $error("Expected o to be [%d] but got [%d].", (A != B), Out);
 
             end 
 

@@ -1,4 +1,7 @@
 *.vvp
 *.vcd
-
-
+*.mem
+*.txt
+*.o
+*.bin
+*.elf

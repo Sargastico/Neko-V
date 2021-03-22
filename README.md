@@ -4,11 +4,15 @@
   <i>RISC-V 32-bit FPGA [Verilog] Processor with neko ears! :p</i><br>
   <i>For study purposes (sh1TTy Code Disclaimer)</b></i>
   <h1></h1>
-  <br>
   
 
 <div align="left">
+<br>
+<h2>STATUS: Not Finished</h2>
 
+Implements the RV32E ISA (Instruction Set Architecture).
+</br>
+<br>
 <h2># Requirements:</h2>
 
   * [GTKWave](http://gtkwave.sourceforge.net/)

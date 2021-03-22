@@ -1,4 +1,4 @@
-// RV32E Instruction Decoder
+// RV32E ISA - Instruction Decoder
 
 module InstructionDecoder (
 
@@ -62,7 +62,16 @@ localparam Execute5 = 4'h8;
 
 reg   [3:0]  currentState;
 
+/*
+    - opcode (7 bits): Partially specifies which of the 6 types of instruction formats.
+    - funct7, and funct3 (10 bits): These two fields, further than the opcode field, specify the operation to be performed.
+    - rs1 (5 bits): Specifies, by index, the register containing first operand (i.e., source register).
+    - rs2 (5 bits): Specifies the second operand register.
+    - rd (5 bits): Specifies the destination register to which the computation result will be directed.
+*/
+
 // Input alias | "Guia Prático RISC-V", Pag. 42 - Fig 2.2
+
 wire  [6:0]  inputOpcode = dataIn[6:0];
 wire  [2:0]  inputFunct3 = dataIn[14:12];
 wire  [6:0]  inputFunct7 = dataIn[31:25];

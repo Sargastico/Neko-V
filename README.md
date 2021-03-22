@@ -18,8 +18,6 @@ Implements the RV32E ISA (Instruction Set Architecture).
   * [GTKWave](http://gtkwave.sourceforge.net/)
   * [Icarus Verilog](http://iverilog.icarus.com/)
 
-
-
 <br>
 <h2># Running tests</h2>
 <br>

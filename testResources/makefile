@@ -7,7 +7,7 @@ HEXDATA       := $(SOURCES:%.s=%.hex)
 MEMDATA       := $(SOURCES:%.s=%.mem)
 
 CFLAGS=-mabi=ilp32e -march=rv32e
-LDFLAGS=-T ./gcc/neko.ld -m elf32lriscv -O binary
+LDFLAGS=-T ../gcc/neko.ld -m elf32lriscv -O binary
 
 OC=riscv64-linux-gnu-objcopy
 CC=riscv64-linux-gnu-gcc-10

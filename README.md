@@ -8,7 +8,6 @@
 
 <div align="left">
 <br>
-<h2>STATUS: Not Finished</h2>
 
 Implements the RV32E ISA (Instruction Set Architecture).
 </br>
@@ -29,7 +28,7 @@ To run the test of the ALU (arithmetic logic unit) module:
 ```
 iverilog -o alu_tb.vvp alu_tb.v
 ```
-To generate de wave view:
+To generate the wave view:
 
 ```
 vvp alu_tb.vvp

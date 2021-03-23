@@ -102,7 +102,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (cpu.registers.registers[0] != 32'h000) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 0, 32'h000, cpu.registers.registers[0]);
         if (cpu.registers.registers[1] != 32'h3E8) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 1, 32'h3E8, cpu.registers.registers[1]);
@@ -141,14 +141,14 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
-        if (cpu.registers.registers[10] != 32'h0) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 10, 32'h0, cpu.registers.registers[10]);
-        if (cpu.registers.registers[11] != 32'h1) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 11, 32'h1, cpu.registers.registers[11]);
-        if (cpu.registers.registers[12] != 32'h1) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 12, 32'h1, cpu.registers.registers[12]);
-        if (cpu.registers.registers[13] != 32'h0) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 13, 32'h0, cpu.registers.registers[13]);
-        if (cpu.registers.registers[14] != 32'h0) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 14, 32'h0, cpu.registers.registers[14]);
-        if (cpu.registers.registers[15] != 32'h1) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 15, 32'h1, cpu.registers.registers[15]);
+        if (cpu.registers.registers[10] != 32'h0) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 10, 32'h0, cpu.registers.registers[10]);
+        if (cpu.registers.registers[11] != 32'h1) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 11, 32'h1, cpu.registers.registers[11]);
+        if (cpu.registers.registers[12] != 32'h1) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 12, 32'h1, cpu.registers.registers[12]);
+        if (cpu.registers.registers[13] != 32'h0) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 13, 32'h0, cpu.registers.registers[13]);
+        if (cpu.registers.registers[14] != 32'h0) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 14, 32'h0, cpu.registers.registers[14]);
+        if (cpu.registers.registers[15] != 32'h1) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 15, 32'h1, cpu.registers.registers[15]);
 
         $info("[!] Testing XORI");
 
@@ -170,7 +170,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (cpu.registers.registers[13] != 32'hFFFFFF0F) $error("[-] Expected [X%02d] to be %08x but got [%08x]", 13, 32'hFFFFFF0F, cpu.registers.registers[13]);
         if (cpu.registers.registers[14] != 32'hFFFFF8F0) $error("[-] Expected [X%02d] to be %08x but got [%08x]", 14, 32'hFFFFF8F0, cpu.registers.registers[14]);
@@ -196,14 +196,14 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
-        if (cpu.registers.registers[10] != 32'h000000F0) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 10, 32'h000000F0, cpu.registers.registers[10]);
-        if (cpu.registers.registers[11] != 32'h0000070F) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 11, 32'h0000070F, cpu.registers.registers[11]);
-        if (cpu.registers.registers[12] != 32'h000007FF) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 12, 32'h000007FF, cpu.registers.registers[12]);
-        if (cpu.registers.registers[13] != 32'hFFFFFFFF) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 13, 32'hFFFFFFFF, cpu.registers.registers[13]);
-        if (cpu.registers.registers[14] != 32'hFFFFFFFF) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 14, 32'hFFFFFFFF, cpu.registers.registers[14]);
-        if (cpu.registers.registers[15] != 32'hFFFFFFFF) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 15, 32'hFFFFFFFF, cpu.registers.registers[15]);
+        if (cpu.registers.registers[10] != 32'h000000F0) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 10, 32'h000000F0, cpu.registers.registers[10]);
+        if (cpu.registers.registers[11] != 32'h0000070F) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 11, 32'h0000070F, cpu.registers.registers[11]);
+        if (cpu.registers.registers[12] != 32'h000007FF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 12, 32'h000007FF, cpu.registers.registers[12]);
+        if (cpu.registers.registers[13] != 32'hFFFFFFFF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 13, 32'hFFFFFFFF, cpu.registers.registers[13]);
+        if (cpu.registers.registers[14] != 32'hFFFFFFFF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 14, 32'hFFFFFFFF, cpu.registers.registers[14]);
+        if (cpu.registers.registers[15] != 32'hFFFFFFFF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 15, 32'hFFFFFFFF, cpu.registers.registers[15]);
 
         $info("[!] Testing ANDI");
 
@@ -225,14 +225,14 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
-        if (cpu.registers.registers[10] != 32'h00000050) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 10, 32'h00000050, cpu.registers.registers[10]);
-        if (cpu.registers.registers[11] != 32'h00000105) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 11, 32'h00000105, cpu.registers.registers[11]);
-        if (cpu.registers.registers[12] != 32'h00000155) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 12, 32'h00000155, cpu.registers.registers[12]);
-        if (cpu.registers.registers[13] != 32'h000000F0) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 13, 32'h000000F0, cpu.registers.registers[13]);
-        if (cpu.registers.registers[14] != 32'h0000070F) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 14, 32'h0000070F, cpu.registers.registers[14]);
-        if (cpu.registers.registers[15] != 32'h000007FF) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 15, 32'h000007FF, cpu.registers.registers[15]);
+        if (cpu.registers.registers[10] != 32'h00000050) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 10, 32'h00000050, cpu.registers.registers[10]);
+        if (cpu.registers.registers[11] != 32'h00000105) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 11, 32'h00000105, cpu.registers.registers[11]);
+        if (cpu.registers.registers[12] != 32'h00000155) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 12, 32'h00000155, cpu.registers.registers[12]);
+        if (cpu.registers.registers[13] != 32'h000000F0) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 13, 32'h000000F0, cpu.registers.registers[13]);
+        if (cpu.registers.registers[14] != 32'h0000070F) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 14, 32'h0000070F, cpu.registers.registers[14]);
+        if (cpu.registers.registers[15] != 32'h000007FF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 15, 32'h000007FF, cpu.registers.registers[15]);
 
         $info("[!] Testing SLLI");
 
@@ -254,15 +254,15 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
-        if (cpu.registers.registers[9] != 32'hFF000000) $error("[-] Expected X%02d to be [%08x] but got [%08x]",  9, 32'h00000050, cpu.registers.registers[9]);
-        if (cpu.registers.registers[10] != 32'h07FF0000) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 10, 32'h00000050, cpu.registers.registers[10]);
-        if (cpu.registers.registers[11] != 32'h0007FF00) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 11, 32'h00000105, cpu.registers.registers[11]);
-        if (cpu.registers.registers[12] != 32'h00003FF8) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 12, 32'h00000155, cpu.registers.registers[12]);
-        if (cpu.registers.registers[13] != 32'h00001FFC) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 13, 32'h000000F0, cpu.registers.registers[13]);
-        if (cpu.registers.registers[14] != 32'h00000FFE) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 14, 32'h0000070F, cpu.registers.registers[14]);
-        if (cpu.registers.registers[15] != 32'h000007FF) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 15, 32'h000007FF, cpu.registers.registers[15]);
+        if (cpu.registers.registers[9] != 32'hFF000000) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]",  9, 32'h00000050, cpu.registers.registers[9]);
+        if (cpu.registers.registers[10] != 32'h07FF0000) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 10, 32'h00000050, cpu.registers.registers[10]);
+        if (cpu.registers.registers[11] != 32'h0007FF00) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 11, 32'h00000105, cpu.registers.registers[11]);
+        if (cpu.registers.registers[12] != 32'h00003FF8) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 12, 32'h00000155, cpu.registers.registers[12]);
+        if (cpu.registers.registers[13] != 32'h00001FFC) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 13, 32'h000000F0, cpu.registers.registers[13]);
+        if (cpu.registers.registers[14] != 32'h00000FFE) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 14, 32'h0000070F, cpu.registers.registers[14]);
+        if (cpu.registers.registers[15] != 32'h000007FF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 15, 32'h000007FF, cpu.registers.registers[15]);
 
         $info("[!] Testing SRLI");
 
@@ -285,7 +285,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (cpu.registers.registers[9] != 32'h000000FF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 9, 32'h00000050, cpu.registers.registers[9]);
         if (cpu.registers.registers[10] != 32'h0000FF00) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 10, 32'h00000050, cpu.registers.registers[10]);
@@ -315,7 +315,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (cpu.registers.registers[9] != 32'hFFFFFFFF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 9, 32'hFFFFFFFF, cpu.registers.registers[9]);
         if (cpu.registers.registers[10] != 32'hFFFFFF00) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 10, 32'hFFFFFF00, cpu.registers.registers[10]);
@@ -345,7 +345,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (cpu.registers.registers[13] != 32'hFF000000) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 13, 32'hFF000000, cpu.registers.registers[13]);
         if (cpu.registers.registers[14] != 32'hFEFFFFFF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 14, 32'hFEFFFFFF, cpu.registers.registers[14]);
@@ -371,7 +371,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (cpu.registers.registers[13] != 32'h01000000) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 13, 32'h01000000, cpu.registers.registers[13]);
         if (cpu.registers.registers[14] != 32'hFF000001) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 14, 32'hFF000001, cpu.registers.registers[14]);
@@ -422,7 +422,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
         $info("[!] Testing BNE");
         
         j = 0;
@@ -443,7 +443,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
         $info("[!] Testing BLT");
 
         j = 0;
@@ -464,7 +464,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
         $info("[!] Testing BGE");
 
         j = 0;
@@ -485,7 +485,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
         $info("[!] Testing BLTU");
 
         j = 0;
@@ -506,7 +506,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
         $info("[!] Testing BGEU");
 
         j = 0;
@@ -527,7 +527,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         for (i = 0; i < memorySize; i = i + 1) begin
         
@@ -572,7 +572,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (cpu.registers.registers[1] != 32'hFFFFF000) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 1, 32'hFFFFF000, cpu.registers.registers[1]);
         if (cpu.registers.registers[2] != 32'hFFFFF018) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 2, 32'hFFFFF018, cpu.registers.registers[2]);
@@ -621,7 +621,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (cpu.registers.registers[1] != 32'h18) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 1, 32'h18, cpu.registers.registers[1]);
         if (cpu.registers.registers[2] != 32'h30) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 2, 32'h30, cpu.registers.registers[2]);
@@ -670,16 +670,16 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
-        if (cpu.registers.registers[8] != 32'h000000DE) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 8, 32'h000000DE, cpu.registers.registers[8]);
-        if (cpu.registers.registers[9] != 32'h000000AD) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 9, 32'h000000AD, cpu.registers.registers[9]);
-        if (cpu.registers.registers[10] != 32'h000000BE) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 10, 32'h000000BE, cpu.registers.registers[10]);
-        if (cpu.registers.registers[11] != 32'h000000EF) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 11, 32'h000000EF, cpu.registers.registers[11]);
-        if (cpu.registers.registers[12] != 32'h0000DEAD) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 12, 32'h0000DEAD, cpu.registers.registers[12]);
-        if (cpu.registers.registers[13] != 32'h0000ADBE) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 13, 32'h0000ADBE, cpu.registers.registers[13]);
-        if (cpu.registers.registers[14] != 32'h0000BEEF) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 14, 32'h0000BEEF, cpu.registers.registers[14]);
-        if (cpu.registers.registers[15] != 32'hDEADBEEF) $error("[-] Expected X%02d to be [%08x] but got [%08x]", 15, 32'hDEADBEEF, cpu.registers.registers[15]);
+        if (cpu.registers.registers[8] != 32'h000000DE) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 8, 32'h000000DE, cpu.registers.registers[8]);
+        if (cpu.registers.registers[9] != 32'h000000AD) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 9, 32'h000000AD, cpu.registers.registers[9]);
+        if (cpu.registers.registers[10] != 32'h000000BE) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 10, 32'h000000BE, cpu.registers.registers[10]);
+        if (cpu.registers.registers[11] != 32'h000000EF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 11, 32'h000000EF, cpu.registers.registers[11]);
+        if (cpu.registers.registers[12] != 32'h0000DEAD) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 12, 32'h0000DEAD, cpu.registers.registers[12]);
+        if (cpu.registers.registers[13] != 32'h0000ADBE) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 13, 32'h0000ADBE, cpu.registers.registers[13]);
+        if (cpu.registers.registers[14] != 32'h0000BEEF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 14, 32'h0000BEEF, cpu.registers.registers[14]);
+        if (cpu.registers.registers[15] != 32'hDEADBEEF) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 15, 32'hDEADBEEF, cpu.registers.registers[15]);
 
         $info("[!] Testing LOAD Sign Extended");
 
@@ -701,7 +701,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (cpu.registers.registers[9] != 32'hFFFFFF84) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]",  9, 32'hFFFFFF84, cpu.registers.registers[9]);
         if (cpu.registers.registers[10] != 32'hFFFFFF83) $error("[-] Expected [X%02d] to be [%08x] but got [%08x]", 10, 32'hFFFFFF83, cpu.registers.registers[10]);
@@ -731,7 +731,7 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
         if (memory[32'h10000 >> 2] != 32'h81) $error("[-] Expected Memory [0x%08x] to be [%08x] but got [%08x]", 32'h10000, 32'h81, memory[32'h10000 >> 2]);
         if (memory[32'h10004 >> 2] != 32'h8281) $error("[-] Expected Memory [0x%08x] to be [%08x] but got [%08x]", 32'h10004, 32'h8281, memory[32'h10004 >> 2]);
@@ -757,15 +757,15 @@ module CPUTest;
 
         end
 
-        $info("[!] Took %d clocks", j);
+        $info("[!] Took [%d] clocks", j);
 
-        if (memory[32'h10000 >> 2] != 32'h00000081) $error("[-] Expected Memory 0x%08x to be [%08x] but got [%08x]",  32'h10000, 32'h00000081, memory[32'h10000 >> 2]);
-        if (memory[32'h10004 >> 2] != 32'h00008100) $error("[-] Expected Memory 0x%08x to be [%08x] but got [%08x]",  32'h10004, 32'h00008100, memory[32'h10004 >> 2]);
-        if (memory[32'h10008 >> 2] != 32'h00810000) $error("[-] Expected Memory 0x%08x to be [%08x] but got [%08x]",  32'h10008, 32'h00810000, memory[32'h10008 >> 2]);
-        if (memory[32'h1000C >> 2] != 32'h81000000) $error("[-] Expected Memory 0x%08x to be [%08x] but got [%08x]",  32'h1000C, 32'h81000000, memory[32'h1000C >> 2]);
-        if (memory[32'h10010 >> 2] != 32'h00008281) $error("[-] Expected Memory 0x%08x to be [%08x] but got [%08x]",  32'h10000, 32'h00008281, memory[32'h1000F >> 2]);
-        if (memory[32'h10014 >> 2] != 32'h00828100) $error("[-] Expected Memory 0x%08x to be [%08x] but got [%08x]",  32'h10004, 32'h00828100, memory[32'h10010 >> 2]);
-        if (memory[32'h10018 >> 2] != 32'h82810000) $error("[-] Expected Memory 0x%08x to be [%08x] but got [%08x]",  32'h10008, 32'h82810000, memory[32'h10014 >> 2]);
+        if (memory[32'h10000 >> 2] != 32'h00000081) $error("[-] Expected Memory [0x%08x] to be [%08x] but got [%08x]",  32'h10000, 32'h00000081, memory[32'h10000 >> 2]);
+        if (memory[32'h10004 >> 2] != 32'h00008100) $error("[-] Expected Memory [0x%08x] to be [%08x] but got [%08x]",  32'h10004, 32'h00008100, memory[32'h10004 >> 2]);
+        if (memory[32'h10008 >> 2] != 32'h00810000) $error("[-] Expected Memory [0x%08x] to be [%08x] but got [%08x]",  32'h10008, 32'h00810000, memory[32'h10008 >> 2]);
+        if (memory[32'h1000C >> 2] != 32'h81000000) $error("[-] Expected Memory [0x%08x] to be [%08x] but got [%08x]",  32'h1000C, 32'h81000000, memory[32'h1000C >> 2]);
+        if (memory[32'h10010 >> 2] != 32'h00008281) $error("[-] Expected Memory [0x%08x] to be [%08x] but got [%08x]",  32'h10000, 32'h00008281, memory[32'h1000F >> 2]);
+        if (memory[32'h10014 >> 2] != 32'h00828100) $error("[-] Expected Memory [0x%08x] to be [%08x] but got [%08x]",  32'h10004, 32'h00828100, memory[32'h10010 >> 2]);
+        if (memory[32'h10018 >> 2] != 32'h82810000) $error("[-] Expected Memory [0x%08x] to be [%08x] but got [%08x]",  32'h10008, 32'h82810000, memory[32'h10014 >> 2]);
 
         #100
 

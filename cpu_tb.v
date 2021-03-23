@@ -43,12 +43,12 @@ module CPUTest;
 
         end
 
-        // if (address == cpu.ins.ExceptionHandlerAddress) begin
+        if (address == cpu.decoder.ExceptionHandlerAddress) begin
 
-        //     $error("[-] Exception handler reached (%08x) at [%08x]", address, cpu.registers.registers[1]);
-        //     $finish;
+            $error("[-] Exception handler reached (%08x) at [%08x]", address, cpu.registers.registers[1]);
+            $finish;
 
-        // end
+        end
 
     end
 
@@ -65,7 +65,7 @@ module CPUTest;
         end
 
         // Test ALU
-        $readmemh("testResources/alu.mem", memory);
+        $readmemh("test/alu.mem", memory);
 
         // Reset
         reset = 1;
@@ -385,7 +385,7 @@ module CPUTest;
         end
 
         // Test Jmps
-        $readmemh("testResources/jmps.mem", memory);
+        $readmemh("test/jmps.mem", memory);
 
         // Reset
         reset = 1;
@@ -536,7 +536,7 @@ module CPUTest;
         end
 
         // Test Jmps
-        $readmemh("testResources/luiauipc.mem", memory);
+        $readmemh("test/luiauipc.mem", memory);
 
         // Reset
         reset = 1;
@@ -584,7 +584,7 @@ module CPUTest;
         end
 
         // Test Jmps
-        $readmemh("testResources/jaljalr.mem", memory);
+        $readmemh("test/jaljalr.mem", memory);
 
         // Reset
         reset = 1;
@@ -634,7 +634,7 @@ module CPUTest;
         end
 
         // Test Jmps
-        $readmemh("testResources/loadstore.mem", memory);
+        $readmemh("test/loadstore.mem", memory);
 
         // Reset
         reset = 1;

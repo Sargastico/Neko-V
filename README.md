@@ -21,8 +21,7 @@ Implements the RV32E ISA (Instruction Set Architecture).
 <h2># Running tests</h2>
 <br>
 
-To run the test of the ALU (arithmetic logic unit) module:
-
+Running a test from a specific module, ALU for example:
 
 > Path : /Neko-V/cpu/alu
 ```
@@ -45,10 +44,24 @@ Result:
 
 <br>
 <br>
-<h2># Compilation of the testing code </h2>
+To test the CPU module, it's necessary to specify the path for all other modules:
+
+```
+iverilog -o cpu_tb.vvp cpu_tb.v -I ./cpu/programCounter -I ./cpu/registerBank -I ./cpu/instructionDecoder -I ./cpu/alu
+```
+
+Then:
+```
+vvp cpu_tb.vvp
+```
+
+<br>
 <br>
 
-To compile the assembly instructions from 'testResources', install the gcc for riscv (for ubuntu):
+<h2># Compile the test code </h2>
+<br>
+
+To compile the assembly instructions from 'test' folder, install the gcc for riscv (for ubuntu):
 ```
 sudo apt install gcc-10-riscv64-linux-gnu
 ```
